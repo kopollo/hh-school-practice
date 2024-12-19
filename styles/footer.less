@@ -7,19 +7,17 @@
     background-color: #212122;
     width: 100%;
     padding-bottom: 22px;
+    padding-top: 30px;
 }
 
 .footer__socials {
     display: flex;
-    padding-top: 30px;
     gap: 15px;
     max-width: 190px;
-    // margin-top: 30px;
 }
 
 .footer__apps {
     display: flex;
-    padding-top: 30px;
     gap: 8px;
 }
 
@@ -42,7 +40,13 @@
 }
 
 .footer-mobile {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__logo {
+    display: none;
 }
 
 @media @gt-tablet {
@@ -51,5 +55,11 @@
     }
     .footer-mobile {
         display: none;
+    }
+}
+
+@media @gt-desktop {
+    .footer__logo {
+        display: inline;
     }
 }
