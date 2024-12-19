@@ -9,10 +9,11 @@
     padding-bottom: 22px;
 }
 
-.footer__services {
+.footer__socials {
     display: flex;
     padding-top: 30px;
     gap: 15px;
+    max-width: 190px;
     // margin-top: 30px;
 }
 
@@ -30,5 +31,25 @@
 .footer__copyright {
     margin: 0;
     margin-top: 15px;
-    color: aqua;
+    color: #999999;
+}
+
+.footer-tablet {
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-mobile {
+    display: block;
+}
+
+@media @gt-tablet {
+    .footer-tablet {
+        display: flex;
+    }
+    .footer-mobile {
+        display: none;
+    }
 }
