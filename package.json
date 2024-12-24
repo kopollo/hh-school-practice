@@ -9,9 +9,9 @@
     "dev": "parcel *.html",
     "build": "parcel build *.html --public-url './'",
     "deploy": "yarn build && gh-pages -d dist",
-    "format": "prettier --write js/*.js",
-    "lint": "eslint js/*.js",
-    "postinstall": "cp githooks/* .git/hooks || true"
+    "format": "bash tools/format.sh",
+    "lint": "eslint",
+    "postinstall": "cp -p githooks/* .git/hooks || true"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",

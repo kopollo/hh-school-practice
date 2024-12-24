@@ -1,5 +1,6 @@
 module.exports = {
     singleQuote: true,
+    semi: true,
     trailingComma: 'es5',
     arrowParens: 'always',
     printWidth: 120,
@@ -8,7 +9,6 @@ module.exports = {
         {
             files: ['*.json'],
             options: {
-                semi: true,
                 tabWidth: 2,
             },
         },
